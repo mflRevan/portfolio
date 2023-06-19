@@ -7,7 +7,7 @@ const INFO = {
 	},
 
 	socials: {
-		linkedin: "https://linkedin.com/"
+		linkedin: "https://linkedin.com/in/aiman-c-58967326"
 	},
 
 	homepage: {
