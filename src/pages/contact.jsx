@@ -53,8 +53,7 @@ const Contact = () => {
 							periods. 
 							<br></br>
 							<br></br>
-							Thanks again for your interest, and I look forward
-							to hearing from you!
+							I'd love to contribute to your project in any way I can, just send me a message and we'll get into contact!
 						</div>
 					</div>
 

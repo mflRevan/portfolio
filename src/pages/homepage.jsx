@@ -97,7 +97,12 @@ const Homepage = () => {
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									{INFO.homepage.description.split('\\n').map((line, index) => (
+										<React.Fragment key={index}>
+											{line}
+											<br />
+										</React.Fragment>
+									))}
 								</div>
 							</div>
 

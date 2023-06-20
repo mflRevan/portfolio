@@ -43,7 +43,7 @@ const Projects = () => {
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							"Success usually comes to those who are too busy to be looking for it." - Henry David Thoreau
+							Feel free to look into some of the projects I've been a part of.
 						</div>
 
 						<div className="projects-list">

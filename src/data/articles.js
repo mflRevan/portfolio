@@ -2,7 +2,7 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 April 2023",
+		date: "29 May 2023",
 		title: "ACE - The Future Of Gaming",
 		description:
 			"The future of gaming is upon us, and NVIDIA is leading the charge. At the recent Computex 2023 event, NVIDIA lifted the veil on their groundbreaking technology...",
