@@ -46,7 +46,7 @@ function article_1() {
 					The conversation continued, revealing Jin's concerns about the rising crime rate affecting his humble Ramen shop.
 					While the dialogue might seem a bit rigid, it's an impressive leap forward from the pre-determined responses we've become accustomed to in gaming. 
 					Through a headset, players can have contextual conversations with NPCs, fostering a more immersive and natural gaming experience.
-					<h3><br></br>More than Just Small Talk</h3>
+					<h3><br></br>More than just small talk</h3>
 					With ACE, NVIDIA has taken a giant stride towards humanizing NPC interaction. 
 					Conversations will no longer be bound by a script, and players can experience the game in a more organic way, enhancing the overall realism of the gaming universe.
 					<h1><br></br>Behind the Scenes: The Tech Underpinning the Demo</h1>
