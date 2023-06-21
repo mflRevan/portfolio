@@ -33,11 +33,11 @@ const Works = () => {
 								alt="Content Writing"
 								className="work-image"
 							/>
-							<div className="work-title">Freelancer</div>
+							<div className="work-title">Freelance</div>
 							<div className="work-subtitle">
-								Content Writer & AI Artist
+								Writer
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">2020 - Present</div>
 						</div>
 
 						<div className="work">
