@@ -48,7 +48,7 @@ const ReadArticle = () => {
 					</div>
 
 					<div className="read-article-container">
-						<div className="read-article-back">
+						{/* <div className="read-article-back">
 							<img
 								src="../back-button.png"
 								alt="back"
@@ -57,7 +57,7 @@ const ReadArticle = () => {
 								onMouseEnter={() => setIsHovered(true)}
 								onMouseLeave={() => setIsHovered(false)}
 							/>
-						</div>
+						</div> */}
 
 						<div className="read-article-wrapper">
 							<div className="read-article-date-container">

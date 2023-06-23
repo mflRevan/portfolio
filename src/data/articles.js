@@ -13,20 +13,30 @@ function article_1() {
 			"Aiman Chbib",
 		],
 		style: `
+				.randImage {
+					align-self: left;
+					outline: 1px solid black;
+					object-fit: cover;
+					width: 800px;
+					height: 450px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease;
+				}
+				
 				.article-content {
 					display: flex;
 					flex-direction: column;
 					align-items: left;
-					line-height: normal
+					line-height: normal;
 				}
-
-				.randImage {
-					align-self: center;
-					outline: 3px solid black;
-					object-fit: cover; /* New property */
-					width: 800px; /* Set the width */
-					height: 450px; /* Set the height */
-					margin 12px;
+				
+				/* Use a media query to adjust the image style on smaller screens */
+				@media (max-width: 800px) {
+					.randImage {
+						width: 100%; /* adjust the width to fit the container */
+						height: auto; /* adjust the height while keeping the aspect ratio */
+					}
 				}
 				`,
 		body: (
@@ -83,7 +93,7 @@ function article_2() {
 
 			.randImage {
 				align-self: center;
-				outline: 3px solid black;
+				outline: 1px solid black;
 				object-fit: cover; /* New property */
 				width: 800px; /* Set the width */
 				height: 450px; /* Set the height */

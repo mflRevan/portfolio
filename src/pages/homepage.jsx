@@ -28,6 +28,38 @@ const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
+	const [logoOpacity, setLogoOpacity] = useState(1);
+
+	useEffect(() => {
+	const handleScroll = () => {
+		let scroll = Math.round(window.pageYOffset, 2);
+
+		let newLogoSize = 80 - (scroll * 4) / 10;
+		let newLogoOpacity = 1 - (scroll * 1) / 100; // adjust numbers as necessary
+
+		if (newLogoSize < oldLogoSize) {
+			if (newLogoSize > 40) {
+				setLogoSize(newLogoSize);
+				setOldLogoSize(newLogoSize);
+				setStayLogo(false);
+			} else {
+				setStayLogo(true);
+			}
+		} else {
+			setLogoSize(newLogoSize);
+			setStayLogo(false);
+		}
+
+		if (newLogoOpacity < 0) {
+			setLogoOpacity(0); // don't let opacity go below 0
+		} else {
+			setLogoOpacity(newLogoOpacity);
+		}
+	};
+
+	window.addEventListener("scroll", handleScroll);
+	return () => window.removeEventListener("scroll", handleScroll);
+	}, [logoSize, oldLogoSize]);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -67,6 +99,8 @@ const Homepage = () => {
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
+		opacity: logoOpacity, // add opacity
+		transition: 'opacity 0.3s', // add transition (optional)
 	};
 
 	return (
