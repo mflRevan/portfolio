@@ -84,20 +84,30 @@ function article_2() {
 		description:
 			"Building on its predecessor's success, the Quest 3 is set to deliver a VR experience like never before. With advancements in optics and mobile processing technology, we expect the new headset to stand out as a marvel of VR engineering.",
 		style: `
+			.randImage {
+				align-self: left;
+				outline: 1px solid black;
+				object-fit: cover;
+				width: 800px;
+				height: 450px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease;
+			}
+			
 			.article-content {
 				display: flex;
 				flex-direction: column;
 				align-items: left;
-				line-height: normal
+				line-height: normal;
 			}
-
-			.randImage {
-				align-self: center;
-				outline: 1px solid black;
-				object-fit: cover; /* New property */
-				width: 800px; /* Set the width */
-				height: 450px; /* Set the height */
-				margin 14px;
+			
+			/* Use a media query to adjust the image style on smaller screens */
+			@media (max-width: 800px) {
+				.randImage {
+					width: 100%; /* adjust the width to fit the container */
+					height: auto; /* adjust the height while keeping the aspect ratio */
+				}
 			}
 			`,
 		keywords: [

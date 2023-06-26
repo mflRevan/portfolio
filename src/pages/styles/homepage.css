@@ -47,6 +47,12 @@
 	transform: rotate(3deg);
 }
 
+@media (max-width: 1024px) {
+	.homepage-image-wrapper {
+		transform: rotate(0deg);
+	}
+}
+
 .homepage-image-wrapper img {
 	width: 100%;
 }
