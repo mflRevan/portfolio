@@ -23,6 +23,8 @@ import "./app.css";
 
 function App() {
 	useEffect(() => {
+		addUserMessage("Ask me anything!");
+
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);
 		}
